@@ -9,6 +9,10 @@ curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compo
 
 apt install git
 
+git clone git@github.com:golubev-ml/fried-kartoshka.git
+
+cd /root/fried-kartoshka
+
 docker build -t api -f cicd/api/Dockerfile .
 
 docker-compose -f cicd/docker-compose.yml up -d

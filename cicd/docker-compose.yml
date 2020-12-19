@@ -5,8 +5,8 @@ services:
     image: postgres:12
     container_name: postgres
     environment:
-      POSTGRES_PASSWORD: stp
-      POSTGRES_USER: stu
+      POSTGRES_PASSWORD: ****
+      POSTGRES_USER: frka
 
   adminer:
     image: adminer

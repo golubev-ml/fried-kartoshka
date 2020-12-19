@@ -19,9 +19,13 @@ services:
     container_name: nginx
     volumes: 
       - /root/fk-cert/:/etc/nginx/ssl/
-      - /root/fried-kartoshka/cicd/fried-kartoshka.conf:/etc/nginx/conf.d/default.conf
+      - /root/fried-kartoshka/cicd/nginx/fried-kartoshka.conf:/etc/nginx/conf.d/default.conf
     ports:
       - 0.0.0.0:8080:80
       - 0.0.0.0:443:443
     environment:
       - NGINX_PORT=80
+  
+  api:
+    image: api 
+    container_name: api
